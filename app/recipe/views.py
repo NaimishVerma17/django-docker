@@ -30,7 +30,7 @@ class IngredientViewSet(viewsets.GenericViewSet,
     """Manage ingredient in the database"""
     serializer_class = serializers.IngredientSerializer
     permission_classes = (IsAuthenticated,)
-    queryset = Tag.objects.all()
+    queryset = Ingredient.objects.all()
     authentication_classes = (TokenAuthentication,)
 
     def get_queryset(self):
