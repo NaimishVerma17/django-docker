@@ -46,7 +46,7 @@ class RecipeDetailSerializer(RecipeSerializers):
     tags = TagSerializer(many=True, read_only=True)
 
 
-class RecipeSerializer(serializers.ModelSerializer):
+class RecipeImageSerializer(serializers.ModelSerializer):
     """Serializer for recipe image"""
 
     class Meta:
